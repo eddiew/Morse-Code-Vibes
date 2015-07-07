@@ -3,6 +3,7 @@ package com.example.customvibes;
 import android.app.Notification;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
+import android.media.AudioManager;
 import android.os.Vibrator;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
@@ -22,7 +23,10 @@ public class VibrationOverrideService extends NotificationListenerService {
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
+        // Skip if the notification doesn't vibrate or if the phone is in silent mode
         if (!vibrates(sbn)) return;
+        AudioManager audioMan = (AudioManager) getSystemService(AUDIO_SERVICE);
+        if (audioMan.getRingerMode() == AudioManager.RINGER_MODE_SILENT) return;
 
         Log.d("service", "vibrating notification received");
         Vibrator vibrator = (Vibrator) getSystemService(VIBRATOR_SERVICE);
@@ -30,9 +34,17 @@ public class VibrationOverrideService extends NotificationListenerService {
         // Cancel existing vibrate pattern
         vibrator.cancel();
 
+        // Get the new vibrate pattern
+        char notificationLetter = getNotificationLetter(sbn);
+        long[] vibrationPattern = getVibrationPattern(notificationLetter);
+
         // Vibrate according to the new pattern
-        long[] vibrationPattern = getVibrationPattern(sbn);
-        vibrator.vibrate(vibrationPattern, -1, sbn.getNotification().audioAttributes);
+        vibrator.vibrate(vibrationPattern, -1);
+    }
+
+    @Override
+    public void onNotificationRemoved(StatusBarNotification sbn) {
+        // empty, but must exist bc method is abstract in NotificationListenerService until API 21
     }
 
     private boolean vibrates(StatusBarNotification sbn) {
@@ -50,14 +62,12 @@ public class VibrationOverrideService extends NotificationListenerService {
     /**
      * Gets the vibration pattern for a given notification
      * based on the name of the application that issued it
-     * @param sbn the notification whose vibration pattern we need
+     * @param letter the letter whose vibration pattern is needed
      * @return the vibration pattern for sbn
      */
-    private long[] getVibrationPattern(StatusBarNotification sbn) {
+    private long[] getVibrationPattern(char letter) {
         // Get morse code for the first letter of the notifying application's name
-        CharSequence appName = getNotifyingAppName(sbn);
-        Log.d("service", appName.toString());
-        int[] morseCode = getMorseCode(appName.charAt(0));
+        int[] morseCode = getMorseCode(letter);
 
         // Convert morse code into vibrations
         long[] vibrationPattern = new long[morseCode.length*2];
@@ -74,17 +84,19 @@ public class VibrationOverrideService extends NotificationListenerService {
      * @param sbn The notification whose application name we want to find
      * @return the name of the application that issued sbn
      */
-    private CharSequence getNotifyingAppName(StatusBarNotification sbn) {
+    private char getNotificationLetter(StatusBarNotification sbn) {
         String packageName = sbn.getPackageName();
         PackageManager packageManager = getPackageManager();
         try {
             ApplicationInfo applicationInfo = packageManager.getApplicationInfo(packageName, 0);
-            return packageManager.getApplicationLabel(applicationInfo);
+            CharSequence appName = packageManager.getApplicationLabel(applicationInfo);
+            Log.d("service", appName.toString());
+            return appName.charAt(0);
         }
         // This should never happen unless the os itself fucks up
         catch (PackageManager.NameNotFoundException e) {
             e.printStackTrace();
-            return "Application Not Found";
+            return 'm'; // m -> dash dash
         }
     }
 
