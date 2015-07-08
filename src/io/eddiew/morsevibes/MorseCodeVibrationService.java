@@ -1,10 +1,12 @@
 package io.eddiew.morsevibes;
 
 import android.app.Notification;
+import android.content.SharedPreferences;
 import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.media.AudioManager;
 import android.os.Vibrator;
+import android.preference.PreferenceManager;
 import android.service.notification.NotificationListenerService;
 import android.service.notification.StatusBarNotification;
 import android.util.Log;
@@ -13,12 +15,10 @@ import android.util.Log;
  * Created by eddiew on 7/1/15.
  */
 public class MorseCodeVibrationService extends NotificationListenerService {
-    public static final int DOT_DURATION = 100;
 
     @Override
     public void onListenerConnected() {
         Log.d("service", "Notification listener connected");
-        MainActivity.VibrationOverrideServiceRunning = true;
     }
 
     @Override
@@ -34,9 +34,13 @@ public class MorseCodeVibrationService extends NotificationListenerService {
         // Cancel existing vibrate pattern
         vibrator.cancel();
 
+        SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(getBaseContext());
+        String dotLengthString = sharedPrefs.getString(getString(R.string.dotLength), "100");
+        long dotLength = Long.parseLong(dotLengthString);
+
         // Get the new vibrate pattern
         char notificationLetter = getNotificationLetter(sbn);
-        long[] vibrationPattern = getVibrationPattern(notificationLetter, DOT_DURATION);
+        long[] vibrationPattern = getVibrationPattern(notificationLetter, dotLength);
 
         // Vibrate according to the new pattern
         vibrator.vibrate(vibrationPattern, -1);
@@ -138,8 +142,7 @@ public class MorseCodeVibrationService extends NotificationListenerService {
 
     @Override
     public void onDestroy() {
-        MainActivity.VibrationOverrideServiceRunning = false;
-        Log.d("service", "destroyed");
+        Log.d("Morse vibes service", "destroyed");
         super.onDestroy();
     }
 }

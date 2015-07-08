@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference
+        android:title="Morse code enabled"
+        android:key="@string/enabled"/>
+    <EditTextPreference
+        android:title="Dot length (ms)"
+        android:key="@string/dotLength"
+        android:defaultValue="100"
+        android:summary="100"
+        android:inputType="number"
+        android:numeric="integer"/>
+    <Preference
+        android:title="Test"
+        android:key="@string/test"/>
+</PreferenceScreen>

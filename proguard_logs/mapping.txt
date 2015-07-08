@@ -1,9 +1,3 @@
-io.eddiew.morsevibes.MainActivity -> io.eddiew.morsevibes.MainActivity:
-    boolean VibrationOverrideServiceRunning -> a
-    void onCreate(android.os.Bundle) -> onCreate
-    void createNotification() -> createNotification
-    void createNotification(android.view.View) -> createNotification
-    boolean hasNotificationAccess() -> a
 io.eddiew.morsevibes.MorseCodeVibrationService -> io.eddiew.morsevibes.MorseCodeVibrationService:
     void onListenerConnected() -> onListenerConnected
     void onNotificationPosted(android.service.notification.StatusBarNotification) -> onNotificationPosted
@@ -13,3 +7,25 @@ io.eddiew.morsevibes.MorseCodeVibrationService -> io.eddiew.morsevibes.MorseCode
     char getNotificationLetter(android.service.notification.StatusBarNotification) -> b
     int[] getMorseCode(char) -> a
     void onDestroy() -> onDestroy
+io.eddiew.morsevibes.SettingsActivity -> io.eddiew.morsevibes.SettingsActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void createNotification(java.lang.CharSequence,java.lang.CharSequence) -> a
+    boolean hasNotificationAccess() -> a
+    boolean access$000(io.eddiew.morsevibes.SettingsActivity) -> a
+    void access$100(io.eddiew.morsevibes.SettingsActivity,java.lang.CharSequence,java.lang.CharSequence) -> a
+io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment -> io.eddiew.morsevibes.a:
+    io.eddiew.morsevibes.SettingsActivity settingsActivity -> a
+    android.preference.CheckBoxPreference enabled -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void init(io.eddiew.morsevibes.SettingsActivity) -> a
+io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment$1 -> io.eddiew.morsevibes.b:
+    io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment this$0 -> a
+    boolean onPreferenceChange(android.preference.Preference,java.lang.Object) -> onPreferenceChange
+io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment$2 -> io.eddiew.morsevibes.c:
+    io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment this$0 -> a
+    boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick
+io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment$3 -> io.eddiew.morsevibes.d:
+    io.eddiew.morsevibes.SettingsActivity val$settingsActivity -> a
+    io.eddiew.morsevibes.SettingsActivity$MorsePreferenceFragment this$0 -> b
+    boolean onPreferenceClick(android.preference.Preference) -> onPreferenceClick

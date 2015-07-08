@@ -1,294 +1,4 @@
 _____________________________________________________________________
-+ Program class: io/eddiew/morsevibes/MainActivity
-  Superclass:    android/app/Activity
-  Major version: 0x33
-  Minor version: 0x0
-  Access flags:  0x21
-    = public class io.eddiew.morsevibes.MainActivity extends android.app.Activity
-
-Interfaces (count = 0):
-
-Constant Pool (count = 119):
-  + Integer [2130837504]
-  + Integer [2130903040]
-  + String [Dummy text]
-  + String [Dummy title]
-  + String [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
-  + String [enabled_notification_listeners]
-  + String [notification]
-  + Class [android/app/Activity]
-  + Class [android/app/Notification$Builder]
-  + Class [android/app/NotificationManager]
-  + Class [android/content/Intent]
-  + Class [android/provider/Settings$Secure]
-  + Class [io/eddiew/morsevibes/MainActivity]
-  + Class [io/eddiew/morsevibes/MorseCodeVibrationService]
-  + Class [java/lang/Class]
-  + Class [java/lang/String]
-  + Class [java/lang/System]
-  + Fieldref [io/eddiew/morsevibes/MainActivity.a Z]
-  + Methodref [android/app/Activity.<init> ()V]
-  + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
-  + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
-  + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
-  + Methodref [android/app/Notification$Builder.setAutoCancel (Z)Landroid/app/Notification$Builder;]
-  + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-  + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-  + Methodref [android/app/Notification$Builder.setDefaults (I)Landroid/app/Notification$Builder;]
-  + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
-  + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
-  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
-  + Methodref [android/provider/Settings$Secure.getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
-  + Methodref [io/eddiew/morsevibes/MainActivity.a ()Z]
-  + Methodref [io/eddiew/morsevibes/MainActivity.createNotification ()V]
-  + Methodref [io/eddiew/morsevibes/MainActivity.getContentResolver ()Landroid/content/ContentResolver;]
-  + Methodref [io/eddiew/morsevibes/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-  + Methodref [io/eddiew/morsevibes/MainActivity.setContentView (I)V]
-  + Methodref [io/eddiew/morsevibes/MainActivity.startActivity (Landroid/content/Intent;)V]
-  + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
-  + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
-  + Methodref [java/lang/System.currentTimeMillis ()J]
-  + NameAndType [<init> ()V]
-  + NameAndType [<init> (Landroid/content/Context;)V]
-  + NameAndType [<init> (Ljava/lang/String;)V]
-  + NameAndType [a ()Z]
-  + NameAndType [a Z]
-  + NameAndType [build ()Landroid/app/Notification;]
-  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
-  + NameAndType [createNotification ()V]
-  + NameAndType [currentTimeMillis ()J]
-  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
-  + NameAndType [getName ()Ljava/lang/String;]
-  + NameAndType [getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
-  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-  + NameAndType [notify (ILandroid/app/Notification;)V]
-  + NameAndType [onCreate (Landroid/os/Bundle;)V]
-  + NameAndType [setAutoCancel (Z)Landroid/app/Notification$Builder;]
-  + NameAndType [setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-  + NameAndType [setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-  + NameAndType [setContentView (I)V]
-  + NameAndType [setDefaults (I)Landroid/app/Notification$Builder;]
-  + NameAndType [setSmallIcon (I)Landroid/app/Notification$Builder;]
-  + NameAndType [startActivity (Landroid/content/Intent;)V]
-  + Utf8 [()J]
-  + Utf8 [()Landroid/app/Notification;]
-  + Utf8 [()Landroid/content/ContentResolver;]
-  + Utf8 [()Ljava/lang/String;]
-  + Utf8 [()V]
-  + Utf8 [()Z]
-  + Utf8 [(I)Landroid/app/Notification$Builder;]
-  + Utf8 [(I)V]
-  + Utf8 [(ILandroid/app/Notification;)V]
-  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
-  + Utf8 [(Landroid/content/Context;)V]
-  + Utf8 [(Landroid/content/Intent;)V]
-  + Utf8 [(Landroid/os/Bundle;)V]
-  + Utf8 [(Landroid/view/View;)V]
-  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-  + Utf8 [(Ljava/lang/CharSequence;)Z]
-  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
-  + Utf8 [(Ljava/lang/String;)V]
-  + Utf8 [(Z)Landroid/app/Notification$Builder;]
-  + Utf8 [<clinit>]
-  + Utf8 [<init>]
-  + Utf8 [Code]
-  + Utf8 [Dummy text]
-  + Utf8 [Dummy title]
-  + Utf8 [StackMapTable]
-  + Utf8 [Z]
-  + Utf8 [a]
-  + Utf8 [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
-  + Utf8 [android/app/Activity]
-  + Utf8 [android/app/Notification$Builder]
-  + Utf8 [android/app/NotificationManager]
-  + Utf8 [android/content/Intent]
-  + Utf8 [android/provider/Settings$Secure]
-  + Utf8 [build]
-  + Utf8 [contains]
-  + Utf8 [createNotification]
-  + Utf8 [currentTimeMillis]
-  + Utf8 [enabled_notification_listeners]
-  + Utf8 [getContentResolver]
-  + Utf8 [getName]
-  + Utf8 [getString]
-  + Utf8 [getSystemService]
-  + Utf8 [io/eddiew/morsevibes/MainActivity]
-  + Utf8 [io/eddiew/morsevibes/MorseCodeVibrationService]
-  + Utf8 [java/lang/Class]
-  + Utf8 [java/lang/String]
-  + Utf8 [java/lang/System]
-  + Utf8 [notification]
-  + Utf8 [notify]
-  + Utf8 [onCreate]
-  + Utf8 [setAutoCancel]
-  + Utf8 [setContentText]
-  + Utf8 [setContentTitle]
-  + Utf8 [setContentView]
-  + Utf8 [setDefaults]
-  + Utf8 [setSmallIcon]
-  + Utf8 [startActivity]
-
-Fields (count = 1):
-  + Field:        a Z
-    Access flags: 0x8
-      = static boolean a
-
-Methods (count = 6):
-  - Method:       <init>()V
-    Access flags: 0x1
-      = public MainActivity()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
-      [0] aload_0 v0
-      [1] invokespecial #19
-        + Methodref [android/app/Activity.<init> ()V]
-      [4] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
-  + Method:       onCreate(Landroid/os/Bundle;)V
-    Access flags: 0x1
-      = public void onCreate(android.os.Bundle)
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 32, locals = 2, stack = 4):
-      [0] aload_0 v0
-      [1] aload_1 v1
-      [2] invokespecial #20
-        + Methodref [android/app/Activity.onCreate (Landroid/os/Bundle;)V]
-      [5] aload_0 v0
-      [6] ldc #2
-        + Integer [2130903040]
-      [8] invokevirtual #35
-        + Methodref [io/eddiew/morsevibes/MainActivity.setContentView (I)V]
-      [11] aload_0 v0
-      [12] invokespecial #31
-        + Methodref [io/eddiew/morsevibes/MainActivity.a ()Z]
-      [15] ifne +16 (target=31)
-      [18] aload_0 v0
-      [19] new #11
-        + Class [android/content/Intent]
-      [22] dup
-      [23] ldc #5
-        + String [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
-      [25] invokespecial #29
-        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
-      [28] invokevirtual #36
-        + Methodref [io/eddiew/morsevibes/MainActivity.startActivity (Landroid/content/Intent;)V]
-      [31] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 1):
-      + Stack map table attribute (count = 1):
-        - [31] Var: ..., Stack: (empty)
-  + Method:       createNotification()V
-    Access flags: 0x2
-      = private void createNotification()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 67, locals = 4, stack = 3):
-      [0] new #9
-        + Class [android/app/Notification$Builder]
-      [3] dup
-      [4] aload_0 v0
-      [5] invokespecial #21
-        + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
-      [8] astore_1 v1
-      [9] aload_1 v1
-      [10] ldc #1
-        + Integer [2130837504]
-      [12] invokevirtual #27
-        + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
-      [15] pop
-      [16] aload_1 v1
-      [17] ldc #4
-        + String [Dummy title]
-      [19] invokevirtual #25
-        + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-      [22] pop
-      [23] aload_1 v1
-      [24] ldc #3
-        + String [Dummy text]
-      [26] invokevirtual #24
-        + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
-      [29] pop
-      [30] aload_1 v1
-      [31] iconst_1
-      [32] invokevirtual #23
-        + Methodref [android/app/Notification$Builder.setAutoCancel (Z)Landroid/app/Notification$Builder;]
-      [35] pop
-      [36] aload_1 v1
-      [37] iconst_2
-      [38] invokevirtual #26
-        + Methodref [android/app/Notification$Builder.setDefaults (I)Landroid/app/Notification$Builder;]
-      [41] pop
-      [42] aload_1 v1
-      [43] invokevirtual #22
-        + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
-      [46] astore_2 v2
-      [47] aload_0 v0
-      [48] ldc #7
-        + String [notification]
-      [50] invokevirtual #34
-        + Methodref [io/eddiew/morsevibes/MainActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [53] checkcast #10
-        + Class [android/app/NotificationManager]
-      [56] astore_3 v3
-      [57] aload_3 v3
-      [58] invokestatic #39
-        + Methodref [java/lang/System.currentTimeMillis ()J]
-      [61] l2i
-      [62] aload_2 v2
-      [63] invokevirtual #28
-        + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
-      [66] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
-  + Method:       createNotification(Landroid/view/View;)V
-    Access flags: 0x1
-      = public void createNotification(android.view.View)
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 5, locals = 2, stack = 1):
-      [0] aload_0 v0
-      [1] invokespecial #32
-        + Methodref [io/eddiew/morsevibes/MainActivity.createNotification ()V]
-      [4] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
-  + Method:       a()Z
-    Access flags: 0x2
-      = private boolean a()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 20, locals = 2, stack = 2):
-      [0] aload_0 v0
-      [1] invokevirtual #33
-        + Methodref [io/eddiew/morsevibes/MainActivity.getContentResolver ()Landroid/content/ContentResolver;]
-      [4] ldc #6
-        + String [enabled_notification_listeners]
-      [6] invokestatic #30
-        + Methodref [android/provider/Settings$Secure.getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
-      [9] astore_1 v1
-      [10] aload_1 v1
-      [11] ldc #14
-        + Class [io/eddiew/morsevibes/MorseCodeVibrationService]
-      [13] invokevirtual #37
-        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
-      [16] invokevirtual #38
-        + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
-      [19] ireturn
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
-  - Method:       <clinit>()V
-    Access flags: 0x8
-      = static void <clinit>()
-    Class member attributes (count = 1):
-    + Code attribute instructions (code length = 5, locals = 0, stack = 1):
-      [0] iconst_0
-      [1] putstatic #18
-        + Fieldref [io/eddiew/morsevibes/MainActivity.a Z]
-      [4] return
-      Code attribute exceptions (count = 0):
-      Code attribute attributes (attribute count = 0):
-
-Class file attributes (count = 0):
-
-_____________________________________________________________________
 + Program class: io/eddiew/morsevibes/MorseCodeVibrationService
   Superclass:    android/service/notification/NotificationListenerService
   Major version: 0x33
@@ -298,7 +8,10 @@ _____________________________________________________________________
 
 Interfaces (count = 0):
 
-Constant Pool (count = 134):
+Constant Pool (count = 157):
+  + Integer [2130968578]
+  + String [100]
+  + String [Morse vibes service]
   + String [Notification listener connected]
   + String [audio]
   + String [com.google.android.gm]
@@ -309,27 +22,28 @@ Constant Pool (count = 134):
   + Class [[I]
   + Class [[J]
   + Class [android/app/Notification]
+  + Class [android/content/SharedPreferences]
   + Class [android/content/pm/PackageManager]
   + Class [android/content/pm/PackageManager$NameNotFoundException]
   + Class [android/media/AudioManager]
   + Class [android/os/Vibrator]
+  + Class [android/preference/PreferenceManager]
   + Class [android/service/notification/NotificationListenerService]
   + Class [android/service/notification/StatusBarNotification]
   + Class [android/util/Log]
-  + Class [io/eddiew/morsevibes/MainActivity]
   + Class [io/eddiew/morsevibes/MorseCodeVibrationService]
   + Class [java/lang/CharSequence]
+  + Class [java/lang/Long]
   + Class [java/lang/String]
-  + Long [100]
   + Fieldref [android/app/Notification.defaults I]
   + Fieldref [android/app/Notification.vibrate [J]
-  + Fieldref [io/eddiew/morsevibes/MainActivity.a Z]
   + Methodref [android/content/pm/PackageManager.getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
   + Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
   + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
   + Methodref [android/media/AudioManager.getRingerMode ()I]
   + Methodref [android/os/Vibrator.cancel ()V]
   + Methodref [android/os/Vibrator.vibrate ([JI)V]
+  + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
   + Methodref [android/service/notification/NotificationListenerService.<init> ()V]
   + Methodref [android/service/notification/NotificationListenerService.onDestroy ()V]
   + Methodref [android/service/notification/StatusBarNotification.getNotification ()Landroid/app/Notification;]
@@ -339,16 +53,19 @@ Constant Pool (count = 134):
   + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.a (CJ)[J]
   + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.a (Landroid/service/notification/StatusBarNotification;)Z]
   + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.b (Landroid/service/notification/StatusBarNotification;)C]
+  + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getBaseContext ()Landroid/content/Context;]
   + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getPackageManager ()Landroid/content/pm/PackageManager;]
+  + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getString (I)Ljava/lang/String;]
   + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [java/lang/Long.parseLong (Ljava/lang/String;)J]
   + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
+  + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
   + InterfaceMethodref [java/lang/CharSequence.charAt (I)C]
   + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
   + NameAndType [<init> ()V]
   + NameAndType [a (C)[I]
   + NameAndType [a (CJ)[J]
   + NameAndType [a (Landroid/service/notification/StatusBarNotification;)Z]
-  + NameAndType [a Z]
   + NameAndType [b (Landroid/service/notification/StatusBarNotification;)C]
   + NameAndType [cancel ()V]
   + NameAndType [charAt (I)C]
@@ -357,47 +74,60 @@ Constant Pool (count = 134):
   + NameAndType [equals (Ljava/lang/Object;)Z]
   + NameAndType [getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
   + NameAndType [getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
+  + NameAndType [getBaseContext ()Landroid/content/Context;]
+  + NameAndType [getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
   + NameAndType [getNotification ()Landroid/app/Notification;]
   + NameAndType [getPackageManager ()Landroid/content/pm/PackageManager;]
   + NameAndType [getPackageName ()Ljava/lang/String;]
   + NameAndType [getRingerMode ()I]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
   + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
   + NameAndType [onDestroy ()V]
+  + NameAndType [parseLong (Ljava/lang/String;)J]
   + NameAndType [printStackTrace ()V]
   + NameAndType [toString ()Ljava/lang/String;]
   + NameAndType [vibrate ([JI)V]
   + NameAndType [vibrate [J]
   + Utf8 [()I]
   + Utf8 [()Landroid/app/Notification;]
+  + Utf8 [()Landroid/content/Context;]
   + Utf8 [()Landroid/content/pm/PackageManager;]
   + Utf8 [()Ljava/lang/String;]
   + Utf8 [()V]
   + Utf8 [(C)[I]
   + Utf8 [(CJ)[J]
   + Utf8 [(I)C]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)Landroid/content/SharedPreferences;]
   + Utf8 [(Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
   + Utf8 [(Landroid/service/notification/StatusBarNotification;)C]
   + Utf8 [(Landroid/service/notification/StatusBarNotification;)V]
   + Utf8 [(Landroid/service/notification/StatusBarNotification;)Z]
   + Utf8 [(Ljava/lang/Object;)Z]
+  + Utf8 [(Ljava/lang/String;)J]
   + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
   + Utf8 [(Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
   + Utf8 [(Ljava/lang/String;Ljava/lang/String;)I]
+  + Utf8 [(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
   + Utf8 [([JI)V]
+  + Utf8 [100]
   + Utf8 [<init>]
   + Utf8 [Code]
   + Utf8 [I]
+  + Utf8 [Morse vibes service]
   + Utf8 [Notification listener connected]
   + Utf8 [StackMapTable]
-  + Utf8 [Z]
   + Utf8 [[I]
   + Utf8 [[J]
   + Utf8 [a]
   + Utf8 [android/app/Notification]
+  + Utf8 [android/content/SharedPreferences]
   + Utf8 [android/content/pm/PackageManager]
   + Utf8 [android/content/pm/PackageManager$NameNotFoundException]
   + Utf8 [android/media/AudioManager]
   + Utf8 [android/os/Vibrator]
+  + Utf8 [android/preference/PreferenceManager]
   + Utf8 [android/service/notification/NotificationListenerService]
   + Utf8 [android/service/notification/StatusBarNotification]
   + Utf8 [android/util/Log]
@@ -412,19 +142,23 @@ Constant Pool (count = 134):
   + Utf8 [equals]
   + Utf8 [getApplicationInfo]
   + Utf8 [getApplicationLabel]
+  + Utf8 [getBaseContext]
+  + Utf8 [getDefaultSharedPreferences]
   + Utf8 [getNotification]
   + Utf8 [getPackageManager]
   + Utf8 [getPackageName]
   + Utf8 [getRingerMode]
+  + Utf8 [getString]
   + Utf8 [getSystemService]
-  + Utf8 [io/eddiew/morsevibes/MainActivity]
   + Utf8 [io/eddiew/morsevibes/MorseCodeVibrationService]
   + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Long]
   + Utf8 [java/lang/String]
   + Utf8 [onDestroy]
   + Utf8 [onListenerConnected]
   + Utf8 [onNotificationPosted]
   + Utf8 [onNotificationRemoved]
+  + Utf8 [parseLong]
   + Utf8 [printStackTrace]
   + Utf8 [service]
   + Utf8 [toString]
@@ -441,7 +175,7 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 5, locals = 1, stack = 1):
       [0] aload_0 v0
-      [1] invokespecial #33
+      [1] invokespecial #36
         + Methodref [android/service/notification/NotificationListenerService.<init> ()V]
       [4] return
       Code attribute exceptions (count = 0):
@@ -450,80 +184,97 @@ Methods (count = 9):
     Access flags: 0x1
       = public void onListenerConnected()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 13, locals = 1, stack = 2):
-      [0] ldc #5
+    + Code attribute instructions (code length = 9, locals = 1, stack = 2):
+      [0] ldc #8
         + String [service]
-      [2] ldc #1
+      [2] ldc #4
         + String [Notification listener connected]
-      [4] invokestatic #37
+      [4] invokestatic #40
         + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
       [7] pop
-      [8] iconst_1
-      [9] putstatic #26
-        + Fieldref [io/eddiew/morsevibes/MainActivity.a Z]
-      [12] return
+      [8] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
   + Method:       onNotificationPosted(Landroid/service/notification/StatusBarNotification;)V
     Access flags: 0x1
       = public void onNotificationPosted(android.service.notification.StatusBarNotification)
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 75, locals = 6, stack = 4):
+    + Code attribute instructions (code length = 107, locals = 10, stack = 4):
       [0] aload_0 v0
       [1] aload_1 v1
-      [2] invokespecial #40
+      [2] invokespecial #43
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.a (Landroid/service/notification/StatusBarNotification;)Z]
       [5] ifne +4 (target=9)
       [8] return
       [9] aload_0 v0
-      [10] ldc #2
+      [10] ldc #5
         + String [audio]
-      [12] invokevirtual #43
+      [12] invokevirtual #48
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [15] checkcast #13
+      [15] checkcast #17
         + Class [android/media/AudioManager]
       [18] astore_2 v2
       [19] aload_2 v2
-      [20] invokevirtual #30
+      [20] invokevirtual #32
         + Methodref [android/media/AudioManager.getRingerMode ()I]
       [23] ifne +4 (target=27)
       [26] return
-      [27] ldc #5
+      [27] ldc #8
         + String [service]
-      [29] ldc #6
+      [29] ldc #9
         + String [vibrating notification received]
-      [31] invokestatic #37
+      [31] invokestatic #40
         + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
       [34] pop
       [35] aload_0 v0
-      [36] ldc #7
+      [36] ldc #10
         + String [vibrator]
-      [38] invokevirtual #43
+      [38] invokevirtual #48
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
-      [41] checkcast #14
+      [41] checkcast #18
         + Class [android/os/Vibrator]
       [44] astore_3 v3
       [45] aload_3 v3
-      [46] invokevirtual #31
+      [46] invokevirtual #33
         + Methodref [android/os/Vibrator.cancel ()V]
       [49] aload_0 v0
-      [50] aload_1 v1
-      [51] invokespecial #41
+      [50] invokevirtual #45
+        + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getBaseContext ()Landroid/content/Context;]
+      [53] invokestatic #35
+        + Methodref [android/preference/PreferenceManager.getDefaultSharedPreferences (Landroid/content/Context;)Landroid/content/SharedPreferences;]
+      [56] astore v4
+      [58] aload v4
+      [60] aload_0 v0
+      [61] ldc #1
+        + Integer [2130968578]
+      [63] invokevirtual #47
+        + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getString (I)Ljava/lang/String;]
+      [66] ldc #2
+        + String [100]
+      [68] invokeinterface #51
+        + InterfaceMethodref [android/content/SharedPreferences.getString (Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;]
+      [73] astore v5
+      [75] aload v5
+      [77] invokestatic #49
+        + Methodref [java/lang/Long.parseLong (Ljava/lang/String;)J]
+      [80] lstore v6
+      [82] aload_0 v0
+      [83] aload_1 v1
+      [84] invokespecial #44
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.b (Landroid/service/notification/StatusBarNotification;)C]
-      [54] istore v4
-      [56] aload_0 v0
-      [57] iload v4
-      [59] ldc2_w #22
-        + Long [100]
-      [62] invokespecial #39
+      [87] istore v8
+      [89] aload_0 v0
+      [90] iload v8
+      [92] lload v6
+      [94] invokespecial #42
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.a (CJ)[J]
-      [65] astore v5
-      [67] aload_3 v3
-      [68] aload v5
-      [70] iconst_m1
-      [71] invokevirtual #32
+      [97] astore v9
+      [99] aload_3 v3
+      [100] aload v9
+      [102] iconst_m1
+      [103] invokevirtual #34
         + Methodref [android/os/Vibrator.vibrate ([JI)V]
-      [74] return
+      [106] return
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 1):
       + Stack map table attribute (count = 2):
@@ -543,11 +294,11 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 79, locals = 7, stack = 2):
       [0] aload_1 v1
-      [1] invokevirtual #35
+      [1] invokevirtual #38
         + Methodref [android/service/notification/StatusBarNotification.getNotification ()Landroid/app/Notification;]
       [4] astore_2 v2
       [5] aload_2 v2
-      [6] getfield #24
+      [6] getfield #27
         + Fieldref [android/app/Notification.defaults I]
       [9] iconst_2
       [10] iand
@@ -557,9 +308,9 @@ Methods (count = 9):
       [18] iconst_0
       [19] istore_3 v3
       [20] aload_1 v1
-      [21] invokevirtual #35
+      [21] invokevirtual #38
         + Methodref [android/service/notification/StatusBarNotification.getNotification ()Landroid/app/Notification;]
-      [24] getfield #25
+      [24] getfield #28
         + Fieldref [android/app/Notification.vibrate [J]
       [27] astore v4
       [29] aload v4
@@ -573,11 +324,11 @@ Methods (count = 9):
       [45] iconst_0
       [46] istore v5
       [48] aload_1 v1
-      [49] invokevirtual #36
+      [49] invokevirtual #39
         + Methodref [android/service/notification/StatusBarNotification.getPackageName ()Ljava/lang/String;]
-      [52] ldc #3
+      [52] ldc #6
         + String [com.google.android.gm]
-      [54] invokevirtual #44
+      [54] invokevirtual #50
         + Methodref [java/lang/String.equals (Ljava/lang/Object;)Z]
       [57] istore v6
       [59] iload_3 v3
@@ -607,7 +358,7 @@ Methods (count = 9):
     + Code attribute instructions (code length = 66, locals = 7, stack = 6):
       [0] aload_0 v0
       [1] iload_1 v1
-      [2] invokespecial #38
+      [2] invokespecial #41
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.a (C)[I]
       [5] astore v4
       [7] aload v4
@@ -660,40 +411,40 @@ Methods (count = 9):
     Class member attributes (count = 1):
     + Code attribute instructions (code length = 58, locals = 6, stack = 3):
       [0] aload_1 v1
-      [1] invokevirtual #36
+      [1] invokevirtual #39
         + Methodref [android/service/notification/StatusBarNotification.getPackageName ()Ljava/lang/String;]
       [4] astore_2 v2
       [5] aload_0 v0
-      [6] invokevirtual #42
+      [6] invokevirtual #46
         + Methodref [io/eddiew/morsevibes/MorseCodeVibrationService.getPackageManager ()Landroid/content/pm/PackageManager;]
       [9] astore_3 v3
       [10] aload_3 v3
       [11] aload_2 v2
       [12] iconst_0
-      [13] invokevirtual #27
+      [13] invokevirtual #29
         + Methodref [android/content/pm/PackageManager.getApplicationInfo (Ljava/lang/String;I)Landroid/content/pm/ApplicationInfo;]
       [16] astore v4
       [18] aload_3 v3
       [19] aload v4
-      [21] invokevirtual #28
+      [21] invokevirtual #30
         + Methodref [android/content/pm/PackageManager.getApplicationLabel (Landroid/content/pm/ApplicationInfo;)Ljava/lang/CharSequence;]
       [24] astore v5
-      [26] ldc #5
+      [26] ldc #8
         + String [service]
       [28] aload v5
-      [30] invokeinterface #46
+      [30] invokeinterface #53
         + InterfaceMethodref [java/lang/CharSequence.toString ()Ljava/lang/String;]
-      [35] invokestatic #37
+      [35] invokestatic #40
         + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
       [38] pop
       [39] aload v5
       [41] iconst_0
-      [42] invokeinterface #45
+      [42] invokeinterface #52
         + InterfaceMethodref [java/lang/CharSequence.charAt (I)C]
       [47] ireturn
       [48] astore v4
       [50] aload v4
-      [52] invokevirtual #29
+      [52] invokevirtual #31
         + Methodref [android/content/pm/PackageManager$NameNotFoundException.printStackTrace ()V]
       [55] bipush 109
       [57] ireturn
@@ -1189,21 +940,855 @@ Methods (count = 9):
     Access flags: 0x1
       = public void onDestroy()
     Class member attributes (count = 1):
-    + Code attribute instructions (code length = 17, locals = 1, stack = 2):
-      [0] iconst_0
-      [1] putstatic #26
-        + Fieldref [io/eddiew/morsevibes/MainActivity.a Z]
-      [4] ldc #5
-        + String [service]
-      [6] ldc #4
+    + Code attribute instructions (code length = 13, locals = 1, stack = 2):
+      [0] ldc #3
+        + String [Morse vibes service]
+      [2] ldc #7
         + String [destroyed]
-      [8] invokestatic #37
+      [4] invokestatic #40
         + Methodref [android/util/Log.d (Ljava/lang/String;Ljava/lang/String;)I]
-      [11] pop
-      [12] aload_0 v0
-      [13] invokespecial #34
+      [7] pop
+      [8] aload_0 v0
+      [9] invokespecial #37
         + Methodref [android/service/notification/NotificationListenerService.onDestroy ()V]
-      [16] return
+      [12] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: io/eddiew/morsevibes/SettingsActivity
+  Superclass:    android/preference/PreferenceActivity
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class io.eddiew.morsevibes.SettingsActivity extends android.preference.PreferenceActivity
+
+Interfaces (count = 0):
+
+Constant Pool (count = 123):
+  + Integer [16908290]
+  + Integer [2130837504]
+  + String [enabled_notification_listeners]
+  + String [notification]
+  + Class [android/app/FragmentManager]
+  + Class [android/app/FragmentTransaction]
+  + Class [android/app/Notification$Builder]
+  + Class [android/app/NotificationManager]
+  + Class [android/preference/PreferenceActivity]
+  + Class [android/provider/Settings$Secure]
+  + Class [io/eddiew/morsevibes/MorseCodeVibrationService]
+  + Class [io/eddiew/morsevibes/SettingsActivity]
+  + Class [io/eddiew/morsevibes/a]
+  + Class [java/lang/Class]
+  + Class [java/lang/String]
+  + Class [java/lang/System]
+  + Methodref [android/app/FragmentManager.beginTransaction ()Landroid/app/FragmentTransaction;]
+  + Methodref [android/app/FragmentTransaction.commit ()I]
+  + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
+  + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
+  + Methodref [android/app/Notification$Builder.setAutoCancel (Z)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setDefaults (I)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
+  + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
+  + Methodref [android/preference/PreferenceActivity.<init> ()V]
+  + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/provider/Settings$Secure.getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.a ()Z]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.getContentResolver ()Landroid/content/ContentResolver;]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + Methodref [io/eddiew/morsevibes/a.<init> ()V]
+  + Methodref [io/eddiew/morsevibes/a.a (Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+  + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+  + Methodref [java/lang/System.currentTimeMillis ()J]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Landroid/content/Context;)V]
+  + NameAndType [a ()Z]
+  + NameAndType [a (Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + NameAndType [a (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + NameAndType [beginTransaction ()Landroid/app/FragmentTransaction;]
+  + NameAndType [build ()Landroid/app/Notification;]
+  + NameAndType [commit ()I]
+  + NameAndType [contains (Ljava/lang/CharSequence;)Z]
+  + NameAndType [currentTimeMillis ()J]
+  + NameAndType [getContentResolver ()Landroid/content/ContentResolver;]
+  + NameAndType [getFragmentManager ()Landroid/app/FragmentManager;]
+  + NameAndType [getName ()Ljava/lang/String;]
+  + NameAndType [getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
+  + NameAndType [getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+  + NameAndType [notify (ILandroid/app/Notification;)V]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + NameAndType [setAutoCancel (Z)Landroid/app/Notification$Builder;]
+  + NameAndType [setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + NameAndType [setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + NameAndType [setDefaults (I)Landroid/app/Notification$Builder;]
+  + NameAndType [setSmallIcon (I)Landroid/app/Notification$Builder;]
+  + Utf8 [()I]
+  + Utf8 [()J]
+  + Utf8 [()Landroid/app/FragmentManager;]
+  + Utf8 [()Landroid/app/FragmentTransaction;]
+  + Utf8 [()Landroid/app/Notification;]
+  + Utf8 [()Landroid/content/ContentResolver;]
+  + Utf8 [()Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Landroid/app/Notification$Builder;]
+  + Utf8 [(ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+  + Utf8 [(ILandroid/app/Notification;)V]
+  + Utf8 [(Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
+  + Utf8 [(Landroid/content/Context;)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;)Z]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+  + Utf8 [(Ljava/lang/CharSequence;)Z]
+  + Utf8 [(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + Utf8 [(Ljava/lang/String;)Ljava/lang/Object;]
+  + Utf8 [(Z)Landroid/app/Notification$Builder;]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [android/app/FragmentManager]
+  + Utf8 [android/app/FragmentTransaction]
+  + Utf8 [android/app/Notification$Builder]
+  + Utf8 [android/app/NotificationManager]
+  + Utf8 [android/preference/PreferenceActivity]
+  + Utf8 [android/provider/Settings$Secure]
+  + Utf8 [beginTransaction]
+  + Utf8 [build]
+  + Utf8 [commit]
+  + Utf8 [contains]
+  + Utf8 [currentTimeMillis]
+  + Utf8 [enabled_notification_listeners]
+  + Utf8 [getContentResolver]
+  + Utf8 [getFragmentManager]
+  + Utf8 [getName]
+  + Utf8 [getString]
+  + Utf8 [getSystemService]
+  + Utf8 [io/eddiew/morsevibes/MorseCodeVibrationService]
+  + Utf8 [io/eddiew/morsevibes/SettingsActivity]
+  + Utf8 [io/eddiew/morsevibes/a]
+  + Utf8 [java/lang/Class]
+  + Utf8 [java/lang/String]
+  + Utf8 [java/lang/System]
+  + Utf8 [notification]
+  + Utf8 [notify]
+  + Utf8 [onCreate]
+  + Utf8 [replace]
+  + Utf8 [setAutoCancel]
+  + Utf8 [setContentText]
+  + Utf8 [setContentTitle]
+  + Utf8 [setDefaults]
+  + Utf8 [setSmallIcon]
+
+Fields (count = 0):
+
+Methods (count = 6):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public SettingsActivity()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #28
+        + Methodref [android/preference/PreferenceActivity.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x4
+      = protected void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 36, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #29
+        + Methodref [android/preference/PreferenceActivity.onCreate (Landroid/os/Bundle;)V]
+      [5] new #13
+        + Class [io/eddiew/morsevibes/a]
+      [8] dup
+      [9] invokespecial #36
+        + Methodref [io/eddiew/morsevibes/a.<init> ()V]
+      [12] astore_2 v2
+      [13] aload_0 v0
+      [14] invokevirtual #34
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+      [17] invokevirtual #17
+        + Methodref [android/app/FragmentManager.beginTransaction ()Landroid/app/FragmentTransaction;]
+      [20] ldc #1
+        + Integer [16908290]
+      [22] aload_2 v2
+      [23] invokevirtual #19
+        + Methodref [android/app/FragmentTransaction.replace (ILandroid/app/Fragment;)Landroid/app/FragmentTransaction;]
+      [26] invokevirtual #18
+        + Methodref [android/app/FragmentTransaction.commit ()I]
+      [29] pop
+      [30] aload_2 v2
+      [31] aload_0 v0
+      [32] invokevirtual #37
+        + Methodref [io/eddiew/morsevibes/a.a (Lio/eddiew/morsevibes/SettingsActivity;)V]
+      [35] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    Access flags: 0x2
+      = private void a(java.lang.CharSequence,java.lang.CharSequence)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 69, locals = 6, stack = 3):
+      [0] new #7
+        + Class [android/app/Notification$Builder]
+      [3] dup
+      [4] aload_0 v0
+      [5] invokespecial #20
+        + Methodref [android/app/Notification$Builder.<init> (Landroid/content/Context;)V]
+      [8] astore_3 v3
+      [9] aload_3 v3
+      [10] ldc #2
+        + Integer [2130837504]
+      [12] invokevirtual #26
+        + Methodref [android/app/Notification$Builder.setSmallIcon (I)Landroid/app/Notification$Builder;]
+      [15] pop
+      [16] aload_3 v3
+      [17] aload_1 v1
+      [18] invokevirtual #24
+        + Methodref [android/app/Notification$Builder.setContentTitle (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+      [21] pop
+      [22] aload_3 v3
+      [23] aload_2 v2
+      [24] invokevirtual #23
+        + Methodref [android/app/Notification$Builder.setContentText (Ljava/lang/CharSequence;)Landroid/app/Notification$Builder;]
+      [27] pop
+      [28] aload_3 v3
+      [29] iconst_1
+      [30] invokevirtual #22
+        + Methodref [android/app/Notification$Builder.setAutoCancel (Z)Landroid/app/Notification$Builder;]
+      [33] pop
+      [34] aload_3 v3
+      [35] iconst_2
+      [36] invokevirtual #25
+        + Methodref [android/app/Notification$Builder.setDefaults (I)Landroid/app/Notification$Builder;]
+      [39] pop
+      [40] aload_3 v3
+      [41] invokevirtual #21
+        + Methodref [android/app/Notification$Builder.build ()Landroid/app/Notification;]
+      [44] astore v4
+      [46] aload_0 v0
+      [47] ldc #4
+        + String [notification]
+      [49] invokevirtual #35
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.getSystemService (Ljava/lang/String;)Ljava/lang/Object;]
+      [52] checkcast #8
+        + Class [android/app/NotificationManager]
+      [55] astore v5
+      [57] aload v5
+      [59] invokestatic #40
+        + Methodref [java/lang/System.currentTimeMillis ()J]
+      [62] l2i
+      [63] aload v4
+      [65] invokevirtual #27
+        + Methodref [android/app/NotificationManager.notify (ILandroid/app/Notification;)V]
+      [68] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a()Z
+    Access flags: 0x2
+      = private boolean a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 32, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] invokevirtual #33
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.getContentResolver ()Landroid/content/ContentResolver;]
+      [4] ldc #3
+        + String [enabled_notification_listeners]
+      [6] invokestatic #30
+        + Methodref [android/provider/Settings$Secure.getString (Landroid/content/ContentResolver;Ljava/lang/String;)Ljava/lang/String;]
+      [9] astore_1 v1
+      [10] aload_1 v1
+      [11] ifnull +19 (target=30)
+      [14] aload_1 v1
+      [15] ldc #11
+        + Class [io/eddiew/morsevibes/MorseCodeVibrationService]
+      [17] invokevirtual #38
+        + Methodref [java/lang/Class.getName ()Ljava/lang/String;]
+      [20] invokevirtual #39
+        + Methodref [java/lang/String.contains (Ljava/lang/CharSequence;)Z]
+      [23] ifeq +7 (target=30)
+      [26] iconst_1
+      [27] goto +4 (target=31)
+      [30] iconst_0
+      [31] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 2):
+        - [30] Var: ...[a:java/lang/String], Stack: (empty)
+        - [31] Var: ..., Stack: [i]
+  + Method:       a(Lio/eddiew/morsevibes/SettingsActivity;)Z
+    Access flags: 0x1008
+      = static synthetic boolean a(io.eddiew.morsevibes.SettingsActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #31
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.a ()Z]
+      [4] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       a(Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V
+    Access flags: 0x1008
+      = static synthetic void a(io.eddiew.morsevibes.SettingsActivity,java.lang.CharSequence,java.lang.CharSequence)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 7, locals = 3, stack = 3):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] aload_2 v2
+      [3] invokespecial #32
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+      [6] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: io/eddiew/morsevibes/a
+  Superclass:    android/preference/PreferenceFragment
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x21
+    = public class io.eddiew.morsevibes.a extends android.preference.PreferenceFragment
+
+Interfaces (count = 0):
+
+Constant Pool (count = 90):
+  + Integer [2130903040]
+  + Integer [2130968578]
+  + Integer [2130968579]
+  + Integer [2130968580]
+  + Class [android/app/FragmentManager]
+  + Class [android/preference/CheckBoxPreference]
+  + Class [android/preference/EditTextPreference]
+  + Class [android/preference/Preference]
+  + Class [android/preference/PreferenceFragment]
+  + Class [io/eddiew/morsevibes/SettingsActivity]
+  + Class [io/eddiew/morsevibes/a]
+  + Class [io/eddiew/morsevibes/b]
+  + Class [io/eddiew/morsevibes/c]
+  + Class [io/eddiew/morsevibes/d]
+  + Fieldref [io/eddiew/morsevibes/a.a Lio/eddiew/morsevibes/SettingsActivity;]
+  + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+  + Methodref [android/app/FragmentManager.executePendingTransactions ()Z]
+  + Methodref [android/preference/CheckBoxPreference.setChecked (Z)V]
+  + Methodref [android/preference/CheckBoxPreference.setOnPreferenceClickListener (Landroid/preference/Preference$OnPreferenceClickListener;)V]
+  + Methodref [android/preference/EditTextPreference.setOnPreferenceChangeListener (Landroid/preference/Preference$OnPreferenceChangeListener;)V]
+  + Methodref [android/preference/Preference.setOnPreferenceClickListener (Landroid/preference/Preference$OnPreferenceClickListener;)V]
+  + Methodref [android/preference/PreferenceFragment.<init> ()V]
+  + Methodref [android/preference/PreferenceFragment.onCreate (Landroid/os/Bundle;)V]
+  + Methodref [android/preference/PreferenceFragment.onResume ()V]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Lio/eddiew/morsevibes/SettingsActivity;)Z]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+  + Methodref [io/eddiew/morsevibes/a.addPreferencesFromResource (I)V]
+  + Methodref [io/eddiew/morsevibes/a.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+  + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+  + Methodref [io/eddiew/morsevibes/b.<init> (Lio/eddiew/morsevibes/a;)V]
+  + Methodref [io/eddiew/morsevibes/c.<init> (Lio/eddiew/morsevibes/a;)V]
+  + Methodref [io/eddiew/morsevibes/d.<init> (Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Lio/eddiew/morsevibes/a;)V]
+  + NameAndType [<init> (Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + NameAndType [a (Lio/eddiew/morsevibes/SettingsActivity;)Z]
+  + NameAndType [a Lio/eddiew/morsevibes/SettingsActivity;]
+  + NameAndType [addPreferencesFromResource (I)V]
+  + NameAndType [b Landroid/preference/CheckBoxPreference;]
+  + NameAndType [executePendingTransactions ()Z]
+  + NameAndType [findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+  + NameAndType [getFragmentManager ()Landroid/app/FragmentManager;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + NameAndType [onCreate (Landroid/os/Bundle;)V]
+  + NameAndType [onResume ()V]
+  + NameAndType [setChecked (Z)V]
+  + NameAndType [setOnPreferenceChangeListener (Landroid/preference/Preference$OnPreferenceChangeListener;)V]
+  + NameAndType [setOnPreferenceClickListener (Landroid/preference/Preference$OnPreferenceClickListener;)V]
+  + Utf8 [()Landroid/app/FragmentManager;]
+  + Utf8 [()V]
+  + Utf8 [()Z]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(I)V]
+  + Utf8 [(Landroid/os/Bundle;)V]
+  + Utf8 [(Landroid/preference/Preference$OnPreferenceChangeListener;)V]
+  + Utf8 [(Landroid/preference/Preference$OnPreferenceClickListener;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;)Z]
+  + Utf8 [(Lio/eddiew/morsevibes/a;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+  + Utf8 [(Z)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Landroid/preference/CheckBoxPreference;]
+  + Utf8 [Lio/eddiew/morsevibes/SettingsActivity;]
+  + Utf8 [StackMapTable]
+  + Utf8 [a]
+  + Utf8 [addPreferencesFromResource]
+  + Utf8 [android/app/FragmentManager]
+  + Utf8 [android/preference/CheckBoxPreference]
+  + Utf8 [android/preference/EditTextPreference]
+  + Utf8 [android/preference/Preference]
+  + Utf8 [android/preference/PreferenceFragment]
+  + Utf8 [b]
+  + Utf8 [executePendingTransactions]
+  + Utf8 [findPreference]
+  + Utf8 [getFragmentManager]
+  + Utf8 [getString]
+  + Utf8 [io/eddiew/morsevibes/SettingsActivity]
+  + Utf8 [io/eddiew/morsevibes/a]
+  + Utf8 [io/eddiew/morsevibes/b]
+  + Utf8 [io/eddiew/morsevibes/c]
+  + Utf8 [io/eddiew/morsevibes/d]
+  + Utf8 [onCreate]
+  + Utf8 [onResume]
+  + Utf8 [setChecked]
+  + Utf8 [setOnPreferenceChangeListener]
+  + Utf8 [setOnPreferenceClickListener]
+
+Fields (count = 2):
+  + Field:        a Lio/eddiew/morsevibes/SettingsActivity;
+    Access flags: 0x0
+      = io.eddiew.morsevibes.SettingsActivity a
+  + Field:        b Landroid/preference/CheckBoxPreference;
+    Access flags: 0x0
+      = android.preference.CheckBoxPreference b
+
+Methods (count = 4):
+  - Method:       <init>()V
+    Access flags: 0x1
+      = public a()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 5, locals = 1, stack = 1):
+      [0] aload_0 v0
+      [1] invokespecial #22
+        + Methodref [android/preference/PreferenceFragment.<init> ()V]
+      [4] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onCreate(Landroid/os/Bundle;)V
+    Access flags: 0x1
+      = public void onCreate(android.os.Bundle)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 12, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] invokespecial #23
+        + Methodref [android/preference/PreferenceFragment.onCreate (Landroid/os/Bundle;)V]
+      [5] aload_0 v0
+      [6] ldc #1
+        + Integer [2130903040]
+      [8] invokevirtual #27
+        + Methodref [io/eddiew/morsevibes/a.addPreferencesFromResource (I)V]
+      [11] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onResume()V
+    Access flags: 0x1
+      = public void onResume()
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 33, locals = 1, stack = 2):
+      [0] aload_0 v0
+      [1] invokespecial #24
+        + Methodref [android/preference/PreferenceFragment.onResume ()V]
+      [4] aload_0 v0
+      [5] getfield #16
+        + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+      [8] ifnull +24 (target=32)
+      [11] aload_0 v0
+      [12] getfield #15
+        + Fieldref [io/eddiew/morsevibes/a.a Lio/eddiew/morsevibes/SettingsActivity;]
+      [15] ifnull +17 (target=32)
+      [18] aload_0 v0
+      [19] getfield #16
+        + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+      [22] aload_0 v0
+      [23] getfield #15
+        + Fieldref [io/eddiew/morsevibes/a.a Lio/eddiew/morsevibes/SettingsActivity;]
+      [26] invokestatic #25
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Lio/eddiew/morsevibes/SettingsActivity;)Z]
+      [29] invokevirtual #18
+        + Methodref [android/preference/CheckBoxPreference.setChecked (Z)V]
+      [32] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 1):
+      + Stack map table attribute (count = 1):
+        - [32] Var: ..., Stack: (empty)
+  + Method:       a(Lio/eddiew/morsevibes/SettingsActivity;)V
+    Access flags: 0x1
+      = public void a(io.eddiew.morsevibes.SettingsActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 107, locals = 4, stack = 5):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #15
+        + Fieldref [io/eddiew/morsevibes/a.a Lio/eddiew/morsevibes/SettingsActivity;]
+      [5] aload_1 v1
+      [6] invokevirtual #26
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.getFragmentManager ()Landroid/app/FragmentManager;]
+      [9] invokevirtual #17
+        + Methodref [android/app/FragmentManager.executePendingTransactions ()Z]
+      [12] pop
+      [13] aload_0 v0
+      [14] aload_0 v0
+      [15] ldc #2
+        + Integer [2130968578]
+      [17] invokevirtual #29
+        + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+      [20] invokevirtual #28
+        + Methodref [io/eddiew/morsevibes/a.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+      [23] checkcast #7
+        + Class [android/preference/EditTextPreference]
+      [26] astore_2 v2
+      [27] aload_2 v2
+      [28] new #12
+        + Class [io/eddiew/morsevibes/b]
+      [31] dup
+      [32] aload_0 v0
+      [33] invokespecial #30
+        + Methodref [io/eddiew/morsevibes/b.<init> (Lio/eddiew/morsevibes/a;)V]
+      [36] invokevirtual #20
+        + Methodref [android/preference/EditTextPreference.setOnPreferenceChangeListener (Landroid/preference/Preference$OnPreferenceChangeListener;)V]
+      [39] aload_0 v0
+      [40] aload_0 v0
+      [41] aload_0 v0
+      [42] ldc #3
+        + Integer [2130968579]
+      [44] invokevirtual #29
+        + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+      [47] invokevirtual #28
+        + Methodref [io/eddiew/morsevibes/a.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+      [50] checkcast #6
+        + Class [android/preference/CheckBoxPreference]
+      [53] putfield #16
+        + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+      [56] aload_0 v0
+      [57] getfield #16
+        + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+      [60] aload_1 v1
+      [61] invokestatic #25
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Lio/eddiew/morsevibes/SettingsActivity;)Z]
+      [64] invokevirtual #18
+        + Methodref [android/preference/CheckBoxPreference.setChecked (Z)V]
+      [67] aload_0 v0
+      [68] getfield #16
+        + Fieldref [io/eddiew/morsevibes/a.b Landroid/preference/CheckBoxPreference;]
+      [71] new #13
+        + Class [io/eddiew/morsevibes/c]
+      [74] dup
+      [75] aload_0 v0
+      [76] invokespecial #31
+        + Methodref [io/eddiew/morsevibes/c.<init> (Lio/eddiew/morsevibes/a;)V]
+      [79] invokevirtual #19
+        + Methodref [android/preference/CheckBoxPreference.setOnPreferenceClickListener (Landroid/preference/Preference$OnPreferenceClickListener;)V]
+      [82] aload_0 v0
+      [83] aload_0 v0
+      [84] ldc #4
+        + Integer [2130968580]
+      [86] invokevirtual #29
+        + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+      [89] invokevirtual #28
+        + Methodref [io/eddiew/morsevibes/a.findPreference (Ljava/lang/CharSequence;)Landroid/preference/Preference;]
+      [92] astore_3 v3
+      [93] aload_3 v3
+      [94] new #14
+        + Class [io/eddiew/morsevibes/d]
+      [97] dup
+      [98] aload_0 v0
+      [99] aload_1 v1
+      [100] invokespecial #32
+        + Methodref [io/eddiew/morsevibes/d.<init> (Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V]
+      [103] invokevirtual #21
+        + Methodref [android/preference/Preference.setOnPreferenceClickListener (Landroid/preference/Preference$OnPreferenceClickListener;)V]
+      [106] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: io/eddiew/morsevibes/b
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class io.eddiew.morsevibes.b extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/preference/Preference$OnPreferenceChangeListener]
+
+Constant Pool (count = 27):
+  + Class [android/preference/Preference]
+  + Class [android/preference/Preference$OnPreferenceChangeListener]
+  + Class [io/eddiew/morsevibes/b]
+  + Class [java/lang/CharSequence]
+  + Class [java/lang/Object]
+  + Fieldref [io/eddiew/morsevibes/b.a Lio/eddiew/morsevibes/a;]
+  + Methodref [android/preference/Preference.setSummary (Ljava/lang/CharSequence;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a Lio/eddiew/morsevibes/a;]
+  + NameAndType [setSummary (Ljava/lang/CharSequence;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/preference/Preference;Ljava/lang/Object;)Z]
+  + Utf8 [(Lio/eddiew/morsevibes/a;)V]
+  + Utf8 [(Ljava/lang/CharSequence;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lio/eddiew/morsevibes/a;]
+  + Utf8 [a]
+  + Utf8 [android/preference/Preference]
+  + Utf8 [android/preference/Preference$OnPreferenceChangeListener]
+  + Utf8 [io/eddiew/morsevibes/b]
+  + Utf8 [java/lang/CharSequence]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onPreferenceChange]
+  + Utf8 [setSummary]
+
+Fields (count = 1):
+  + Field:        a Lio/eddiew/morsevibes/a;
+    Access flags: 0x1010
+      = final synthetic io.eddiew.morsevibes.a a
+
+Methods (count = 2):
+  - Method:       <init>(Lio/eddiew/morsevibes/a;)V
+    Access flags: 0x0
+      = b(io.eddiew.morsevibes.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #6
+        + Fieldref [io/eddiew/morsevibes/b.a Lio/eddiew/morsevibes/a;]
+      [5] aload_0 v0
+      [6] invokespecial #8
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPreferenceChange(Landroid/preference/Preference;Ljava/lang/Object;)Z
+    Access flags: 0x1
+      = public boolean onPreferenceChange(android.preference.Preference,java.lang.Object)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 3, stack = 2):
+      [0] aload_1 v1
+      [1] aload_2 v2
+      [2] checkcast #4
+        + Class [java/lang/CharSequence]
+      [5] invokevirtual #7
+        + Methodref [android/preference/Preference.setSummary (Ljava/lang/CharSequence;)V]
+      [8] iconst_1
+      [9] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: io/eddiew/morsevibes/c
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class io.eddiew.morsevibes.c extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/preference/Preference$OnPreferenceClickListener]
+
+Constant Pool (count = 32):
+  + String [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
+  + Class [android/content/Intent]
+  + Class [android/preference/Preference$OnPreferenceClickListener]
+  + Class [io/eddiew/morsevibes/a]
+  + Class [io/eddiew/morsevibes/c]
+  + Class [java/lang/Object]
+  + Fieldref [io/eddiew/morsevibes/c.a Lio/eddiew/morsevibes/a;]
+  + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+  + Methodref [io/eddiew/morsevibes/a.startActivity (Landroid/content/Intent;)V]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [<init> (Ljava/lang/String;)V]
+  + NameAndType [a Lio/eddiew/morsevibes/a;]
+  + NameAndType [startActivity (Landroid/content/Intent;)V]
+  + Utf8 [()V]
+  + Utf8 [(Landroid/content/Intent;)V]
+  + Utf8 [(Landroid/preference/Preference;)Z]
+  + Utf8 [(Lio/eddiew/morsevibes/a;)V]
+  + Utf8 [(Ljava/lang/String;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lio/eddiew/morsevibes/a;]
+  + Utf8 [a]
+  + Utf8 [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
+  + Utf8 [android/content/Intent]
+  + Utf8 [android/preference/Preference$OnPreferenceClickListener]
+  + Utf8 [io/eddiew/morsevibes/a]
+  + Utf8 [io/eddiew/morsevibes/c]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onPreferenceClick]
+  + Utf8 [startActivity]
+
+Fields (count = 1):
+  + Field:        a Lio/eddiew/morsevibes/a;
+    Access flags: 0x1010
+      = final synthetic io.eddiew.morsevibes.a a
+
+Methods (count = 2):
+  - Method:       <init>(Lio/eddiew/morsevibes/a;)V
+    Access flags: 0x0
+      = c(io.eddiew.morsevibes.a)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 10, locals = 2, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #7
+        + Fieldref [io/eddiew/morsevibes/c.a Lio/eddiew/morsevibes/a;]
+      [5] aload_0 v0
+      [6] invokespecial #10
+        + Methodref [java/lang/Object.<init> ()V]
+      [9] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPreferenceClick(Landroid/preference/Preference;)Z
+    Access flags: 0x1
+      = public boolean onPreferenceClick(android.preference.Preference)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 18, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #7
+        + Fieldref [io/eddiew/morsevibes/c.a Lio/eddiew/morsevibes/a;]
+      [4] new #2
+        + Class [android/content/Intent]
+      [7] dup
+      [8] ldc #1
+        + String [android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS]
+      [10] invokespecial #8
+        + Methodref [android/content/Intent.<init> (Ljava/lang/String;)V]
+      [13] invokevirtual #9
+        + Methodref [io/eddiew/morsevibes/a.startActivity (Landroid/content/Intent;)V]
+      [16] iconst_1
+      [17] ireturn
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+
+Class file attributes (count = 0):
+
+_____________________________________________________________________
++ Program class: io/eddiew/morsevibes/d
+  Superclass:    java/lang/Object
+  Major version: 0x33
+  Minor version: 0x0
+  Access flags:  0x20
+    = class io.eddiew.morsevibes.d extends java.lang.Object
+
+Interfaces (count = 1):
+  + Class [android/preference/Preference$OnPreferenceClickListener]
+
+Constant Pool (count = 36):
+  + Integer [2130968576]
+  + Integer [2130968581]
+  + Class [android/preference/Preference$OnPreferenceClickListener]
+  + Class [io/eddiew/morsevibes/SettingsActivity]
+  + Class [io/eddiew/morsevibes/a]
+  + Class [io/eddiew/morsevibes/d]
+  + Class [java/lang/Object]
+  + Fieldref [io/eddiew/morsevibes/d.a Lio/eddiew/morsevibes/SettingsActivity;]
+  + Fieldref [io/eddiew/morsevibes/d.b Lio/eddiew/morsevibes/a;]
+  + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+  + Methodref [java/lang/Object.<init> ()V]
+  + NameAndType [<init> ()V]
+  + NameAndType [a (Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + NameAndType [a Lio/eddiew/morsevibes/SettingsActivity;]
+  + NameAndType [b Lio/eddiew/morsevibes/a;]
+  + NameAndType [getString (I)Ljava/lang/String;]
+  + Utf8 [()V]
+  + Utf8 [(I)Ljava/lang/String;]
+  + Utf8 [(Landroid/preference/Preference;)Z]
+  + Utf8 [(Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+  + Utf8 [(Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V]
+  + Utf8 [<init>]
+  + Utf8 [Code]
+  + Utf8 [Lio/eddiew/morsevibes/SettingsActivity;]
+  + Utf8 [Lio/eddiew/morsevibes/a;]
+  + Utf8 [a]
+  + Utf8 [android/preference/Preference$OnPreferenceClickListener]
+  + Utf8 [b]
+  + Utf8 [getString]
+  + Utf8 [io/eddiew/morsevibes/SettingsActivity]
+  + Utf8 [io/eddiew/morsevibes/a]
+  + Utf8 [io/eddiew/morsevibes/d]
+  + Utf8 [java/lang/Object]
+  + Utf8 [onPreferenceClick]
+
+Fields (count = 2):
+  + Field:        a Lio/eddiew/morsevibes/SettingsActivity;
+    Access flags: 0x1010
+      = final synthetic io.eddiew.morsevibes.SettingsActivity a
+  + Field:        b Lio/eddiew/morsevibes/a;
+    Access flags: 0x1010
+      = final synthetic io.eddiew.morsevibes.a b
+
+Methods (count = 2):
+  - Method:       <init>(Lio/eddiew/morsevibes/a;Lio/eddiew/morsevibes/SettingsActivity;)V
+    Access flags: 0x0
+      = d(io.eddiew.morsevibes.a,io.eddiew.morsevibes.SettingsActivity)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 15, locals = 3, stack = 2):
+      [0] aload_0 v0
+      [1] aload_1 v1
+      [2] putfield #9
+        + Fieldref [io/eddiew/morsevibes/d.b Lio/eddiew/morsevibes/a;]
+      [5] aload_0 v0
+      [6] aload_2 v2
+      [7] putfield #8
+        + Fieldref [io/eddiew/morsevibes/d.a Lio/eddiew/morsevibes/SettingsActivity;]
+      [10] aload_0 v0
+      [11] invokespecial #12
+        + Methodref [java/lang/Object.<init> ()V]
+      [14] return
+      Code attribute exceptions (count = 0):
+      Code attribute attributes (attribute count = 0):
+  + Method:       onPreferenceClick(Landroid/preference/Preference;)Z
+    Access flags: 0x1
+      = public boolean onPreferenceClick(android.preference.Preference)
+    Class member attributes (count = 1):
+    + Code attribute instructions (code length = 27, locals = 2, stack = 4):
+      [0] aload_0 v0
+      [1] getfield #8
+        + Fieldref [io/eddiew/morsevibes/d.a Lio/eddiew/morsevibes/SettingsActivity;]
+      [4] aload_0 v0
+      [5] getfield #9
+        + Fieldref [io/eddiew/morsevibes/d.b Lio/eddiew/morsevibes/a;]
+      [8] ldc #1
+        + Integer [2130968576]
+      [10] invokevirtual #11
+        + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+      [13] aload_0 v0
+      [14] getfield #9
+        + Fieldref [io/eddiew/morsevibes/d.b Lio/eddiew/morsevibes/a;]
+      [17] ldc #2
+        + Integer [2130968581]
+      [19] invokevirtual #11
+        + Methodref [io/eddiew/morsevibes/a.getString (I)Ljava/lang/String;]
+      [22] invokestatic #10
+        + Methodref [io/eddiew/morsevibes/SettingsActivity.a (Lio/eddiew/morsevibes/SettingsActivity;Ljava/lang/CharSequence;Ljava/lang/CharSequence;)V]
+      [25] iconst_1
+      [26] ireturn
       Code attribute exceptions (count = 0):
       Code attribute attributes (attribute count = 0):
 
