@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.provider.Settings;
 import android.view.View;
-import com.example.morsevibes.R;
 
 public class MainActivity extends Activity {
     static boolean VibrationOverrideServiceRunning = false;
