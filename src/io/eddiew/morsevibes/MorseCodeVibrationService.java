@@ -1,4 +1,4 @@
-package com.example.customvibes;
+package io.eddiew.morsevibes;
 
 import android.app.Notification;
 import android.content.pm.ApplicationInfo;
@@ -12,7 +12,7 @@ import android.util.Log;
 /**
  * Created by eddiew on 7/1/15.
  */
-public class VibrationOverrideService extends NotificationListenerService {
+public class MorseCodeVibrationService extends NotificationListenerService {
     public static final int DOT_DURATION = 100;
 
     @Override
@@ -23,7 +23,7 @@ public class VibrationOverrideService extends NotificationListenerService {
 
     @Override
     public void onNotificationPosted(StatusBarNotification sbn) {
-        // Skip if the notification doesn't vibrate or if the phone is in silent mode
+        // Don't vibrate if the notification doesn't vibrate or if the phone is in silent mode
         if (!vibrates(sbn)) return;
         AudioManager audioMan = (AudioManager) getSystemService(AUDIO_SERVICE);
         if (audioMan.getRingerMode() == AudioManager.RINGER_MODE_SILENT) return;
@@ -36,7 +36,7 @@ public class VibrationOverrideService extends NotificationListenerService {
 
         // Get the new vibrate pattern
         char notificationLetter = getNotificationLetter(sbn);
-        long[] vibrationPattern = getVibrationPattern(notificationLetter);
+        long[] vibrationPattern = getVibrationPattern(notificationLetter, DOT_DURATION);
 
         // Vibrate according to the new pattern
         vibrator.vibrate(vibrationPattern, -1);
@@ -56,7 +56,10 @@ public class VibrationOverrideService extends NotificationListenerService {
         long[] vibrationPattern = sbn.getNotification().vibrate;
         boolean customVibrate = vibrationPattern != null && vibrationPattern.length > 1;
 
-        return defaultVibrate || customVibrate;
+        // Gmail hack because it doesn't use notification vibrations
+        boolean isGMail = sbn.getPackageName().equals("com.google.android.gm");
+
+        return defaultVibrate || customVibrate || isGMail;
     }
 
     /**
@@ -65,15 +68,15 @@ public class VibrationOverrideService extends NotificationListenerService {
      * @param letter the letter whose vibration pattern is needed
      * @return the vibration pattern for sbn
      */
-    private long[] getVibrationPattern(char letter) {
+    private long[] getVibrationPattern(char letter, long dotLen) {
         // Get morse code for the first letter of the notifying application's name
         int[] morseCode = getMorseCode(letter);
 
         // Convert morse code into vibrations
         long[] vibrationPattern = new long[morseCode.length*2];
         for(int i = 0; i < morseCode.length; i++) {
-            vibrationPattern[i*2] = DOT_DURATION;
-            vibrationPattern[i*2+1] = morseCode[i] * DOT_DURATION;
+            vibrationPattern[i*2] = dotLen;
+            vibrationPattern[i*2+1] = morseCode[i] * dotLen;
         }
         vibrationPattern[0] = 0;
         return vibrationPattern;

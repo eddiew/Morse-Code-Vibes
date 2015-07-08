@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">customvibes</string>
-    <string name="vibration_override_service_name">Vibration Override Service</string>
+    <string name="app_name">Morse Code Vibes</string>
+    <string name="vibration_override_service_name">Morse Code Vibrations</string>
 </resources>

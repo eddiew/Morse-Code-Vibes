@@ -1,13 +1,13 @@
-package com.example.customvibes;
+package io.eddiew.morsevibes;
 
 import android.app.Activity;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.content.Intent;
 import android.os.Bundle;
-import android.preference.PreferenceActivity;
 import android.provider.Settings;
 import android.view.View;
+import com.example.morsevibes.R;
 
 public class MainActivity extends Activity {
     static boolean VibrationOverrideServiceRunning = false;
@@ -40,9 +40,9 @@ public class MainActivity extends Activity {
         createNotification();
     }
 
-    // Returns whether VibrationOverrideService can read the user's notifications
+    // Returns whether MorseCodeVibrationService can read the user's notifications
     private boolean hasNotificationAccess() {
         String enabledNotificationListeners = Settings.Secure.getString(getContentResolver(), "enabled_notification_listeners");
-        return enabledNotificationListeners.contains(VibrationOverrideService.class.getName());
+        return enabledNotificationListeners.contains(MorseCodeVibrationService.class.getName());
     }
 }

@@ -1,0 +1,8 @@
+io.eddiew.morsevibes.BuildConfig
+io.eddiew.morsevibes.MorseCodeVibrationService:
+    public static final int DOT_DURATION
+io.eddiew.morsevibes.R
+io.eddiew.morsevibes.R$attr
+io.eddiew.morsevibes.R$drawable
+io.eddiew.morsevibes.R$layout
+io.eddiew.morsevibes.R$string
