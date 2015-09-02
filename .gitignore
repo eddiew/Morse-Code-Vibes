@@ -13,6 +13,9 @@ bin/
 gen/
 out/
 
+# logs
+*_logs
+
 # Local configuration file (sdk path, etc)
 local.properties
 
