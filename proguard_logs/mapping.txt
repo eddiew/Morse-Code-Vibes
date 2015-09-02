@@ -6,6 +6,7 @@ io.eddiew.morsevibes.MorseCodeVibrationService -> io.eddiew.morsevibes.MorseCode
     long[] getVibrationPattern(char,long) -> a
     char getNotificationLetter(android.service.notification.StatusBarNotification) -> b
     int[] getMorseCode(char) -> a
+    boolean isGoogle(android.service.notification.StatusBarNotification) -> c
     void onDestroy() -> onDestroy
 io.eddiew.morsevibes.SettingsActivity -> io.eddiew.morsevibes.SettingsActivity:
     void onCreate(android.os.Bundle) -> onCreate
