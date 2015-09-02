@@ -7,23 +7,15 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.*;
 import android.provider.Settings;
-import android.util.Log;
 
 /**
  * Created by eddiew on 7/7/15.
  */
 public class SettingsActivity extends PreferenceActivity {
-    private String dotLengthKey;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-//        dotLengthKey = getString(R.string.dotLength);
-//
-//        // Listen for dot length changes
-//        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-//        prefs.registerOnSharedPreferenceChangeListener(dotLengthListener);
 
         // Initialize preferences activity
         MorsePreferenceFragment morsePrefs = new MorsePreferenceFragment();
@@ -107,60 +99,4 @@ public class SettingsActivity extends PreferenceActivity {
             });
         }
     }
-
-//    private SharedPreferences.OnSharedPreferenceChangeListener dotLengthListener = new SharedPreferences.OnSharedPreferenceChangeListener() {
-//        @Override
-//        public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-//            if (!key.equals(dotLengthKey))
-//                return;
-//            Log.d("Dot length listener", "dot length changed");
-//
-//            // Get new vibration patterns
-//            String dotLengthString = sharedPreferences.getString(key, "120");
-//            long dotLength = Long.parseLong(dotLengthString);
-//            long[][] vibrationPatterns = getVibrationPatterns(dotLength);
-//        }
-//    };
-
-    private long[][] getVibrationPatterns(long dotLength) {
-        long[][] patterns = new long[26][];
-        for (int c = 0; c < 26; c++) {
-            int morseLength = MorseCodes[c].length;
-            patterns[c] = new long[morseLength * 2];
-            for (int i = 0; i < morseLength; i++) {
-                patterns[c][i * 2] = dotLength;
-                patterns[c][i * 2 + 1] = MorseCodes[c][i] * dotLength;
-            }
-        }
-        return patterns;
-    }
-
-    private static long[][] MorseCodes = new long[][] {
-        {1,3},      // a
-        {3,1,1,1},  // b
-        {3,1,3,1},  // c
-        {3,1,1},    // d
-        {1},        // e
-        {1,1,3,1},  // f
-        {3,3,1},    // g
-        {1,1,1,1},  // h
-        {1,1},      // i
-        {1,3,3,3},  // j
-        {3,1,3},    // k
-        {1,3,1,1},  // l
-        {3,3},      // m
-        {3,1},      // n
-        {3,3,3},    // o
-        {1,3,3,1},  // p
-        {3,3,1,3},  // q
-        {1,3,1},    // r
-        {1,1,1},    // s
-        {3},        // t
-        {1,1,3},    // u
-        {1,1,1,3},  // v
-        {1,3,3},    // w
-        {3,1,1,3},  // x
-        {3,1,3,3},  // y
-        {3,3,1,1}   // z
-    };
 }
