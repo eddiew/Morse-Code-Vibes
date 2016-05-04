@@ -88,15 +88,15 @@ public class MorseCodeVibrationService extends NotificationListenerService imple
    */
   private long[] getVibrationPattern(String packageName) {
     try {
-	    char c = getAppsFirstLetter(packageName);
-	    return vibrationPatterns[c - 'a'];
-	  }
-	  // This should never happen unless the os itself fucks up
-	  catch (PackageManager.NameNotFoundException e) {
-		  Log.e("Morse vibes service", "Error: " + e.toString());
-		  e.printStackTrace();
-		  return vibrationPatterns['m']; // m -> dash dash
-	  }
+	  char c = getAppsFirstLetter(packageName);
+	  return vibrationPatterns[c - 'a'];
+  }
+	// This should never happen unless the os itself fucks up
+	catch (PackageManager.NameNotFoundException e) {
+		Log.e("Morse vibes service", "Error: " + e.toString());
+		e.printStackTrace();
+		return vibrationPatterns['m']; // m -> dash dash
+	}
   }
 
 	/**
@@ -162,7 +162,7 @@ public class MorseCodeVibrationService extends NotificationListenerService imple
   }
 
   private static long[][] MorseCodes = new long[][] {
-      {1,3},      // a
+		  {1,3},      // a
       {3,1,1,1},  // b
       {3,1,3,1},  // c
       {3,1,1},    // d
